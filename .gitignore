@@ -1,4 +1,4 @@
 # Debug Builds
 
-# build/
+build/
 .zig-cache/
