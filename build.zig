@@ -9,8 +9,8 @@ pub fn build(b: *std.Build) void {
 
     // Engine .dll definition.
     const engine = b.addSharedLibrary(.{
-        .name = "Gara",
-        .root_source_file = b.path("Gara/root.zig"),
+        .name = "garaEngine",
+        .root_source_file = b.path("Src/Engine/root.zig"),
         .target = target,
         .optimize = optimize,
         .version = .{ .major = 0, .minor = 0, .patch = 1 },
@@ -20,7 +20,7 @@ pub fn build(b: *std.Build) void {
 
     const sandbox = b.addExecutable(.{
         .name = "GaraSandbox",
-        .root_source_file = b.path("Sandbox/main.zig"),
+        .root_source_file = b.path("./Src/Sandbox/main.zig"),
         .target = target,
     });
 

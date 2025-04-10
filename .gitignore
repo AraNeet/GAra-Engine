@@ -1,0 +1,4 @@
+# Debug Builds
+
+# build/
+.zig-cache/
